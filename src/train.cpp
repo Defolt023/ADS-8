@@ -1,9 +1,9 @@
-/ Copyright 2021 NNTU-CS
+// Copyright 2021 NNTU-CS
 #include "train.h"
   Train::Train() : countOp(0), first(nullptr) {}
   Train::Train() :first(nullptr), countOp(0) {}
   void Train::addCage(bool light) {
-  Cage * cage = new Cage;
+  Cage* cage = new Cage;
   cage->light = light;
   if (!first) {
   cage->next = cage;
@@ -32,7 +32,7 @@
   if (current->light) {
   current->light = false;
   trainLenght = lenght;
-  for (trainLenght; trainLenght > 1; --trainLenght) {
+  for (trainLenght; trainLenght > 0; --trainLenght) {
   current = current->prev;
   countOp++;
 }
