@@ -4,6 +4,7 @@
   Train::Train() : countOp(0), first(nullptr) {}
   Train::Train() :first(nullptr), countOp(0) {}
   void Train::addCage(bool light) {
+
   Cage * cage = new Cage;
   cage->light = light;
   if (!first) {
