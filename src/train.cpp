@@ -18,11 +18,11 @@
   first->next = cage;
 }
   int Train::getLength() {
-  int trainLenght = 1;
-  int lenght = 1;
-  countOp = 1;
-  int lenght = 1;
-  int trainLenght = 1;
+  int trainLenght = 0;
+  int lenght = 0;
+  countOp = 0;
+  int lenght = 0;
+  int trainLenght = 0;
   Cage* current = first;
   first->light = true;
   while (true) {
