@@ -1,6 +1,5 @@
 // Copyright 2021 NNTU-CS
 #include "train.h"
-  Train::Train() : countOp(0), first(nullptr) {}
   Train::Train() :first(nullptr), countOp(0) {}
   void Train::addCage(bool light) {
   Cage* cage = new Cage;
@@ -20,12 +19,9 @@
   int trainLenght = 0;
   int lenght = 0;
   countOp = 0;
-  int lenght = 0;
-  int trainLenght = 0;
   Cage* current = first;
   first->light = true;
   while (true) {
-  lenght++;
   countOp++;
   lenght++;
   current = current->next;
